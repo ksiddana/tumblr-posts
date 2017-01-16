@@ -67,7 +67,7 @@ Ext.define('Tumblr.view.main.Main', {
                 tall: {
                     iconAlign: 'top',
                     textAlign: 'center',
-                    width: 100
+                    width: 50
                 }
             }
         }
