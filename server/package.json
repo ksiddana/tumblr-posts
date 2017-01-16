@@ -1,0 +1,31 @@
+{
+  "name": "Headspace",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "faker": "^3.1.0",
+    "lodash": "^4.11.2",
+    "morgan": "^1.7.0",
+    "node-uuid": "^1.4.7",
+    "tumblr": "^0.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^2.9.0",
+    "eslint-config-airbnb-base": "^2.0.0",
+    "eslint-plugin-import": "^1.6.1",
+    "nodemon": "^1.9.2"
+  },
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "mon": "nodemon server/server.js",
+    "lint": "eslint server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  }
+}
