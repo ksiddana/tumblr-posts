@@ -7,7 +7,15 @@ const cors = require('cors');
 const app = express();
 const tumblr = require('tumblr');
 
-app.set('port', process.env.PORT || 3333);
+
+if( process.argv[2] !== undefined && !isNaN(process.argv[2]) ){
+  app.set('port', process.argv[2]);
+}
+else {
+  app.set('port', process.env.PORT || 3000 );
+}
+
+
 app.use(express.static(__dirname + '/../tumblr2'));
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'combined'));
 app.use(bodyParser.json());
@@ -80,6 +88,6 @@ app.use((err, req, res, next) => {
 const server = http.createServer(app);
 
 server.listen(app.get('port'), () => {
-  console.log(`Server listening at localhost:${app.get('port')}...`);
+  console.log('Server listening on localhost:' + app.get('port'));
   console.log('Test Complete ...');
 });

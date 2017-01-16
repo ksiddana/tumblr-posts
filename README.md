@@ -7,14 +7,22 @@ This repository contains an ExtJS application that uses the Tumblr's API to sear
 
 ## Installation Instructions
 
-	git clone https://github.com/ksiddana/tumblr-posts
-	cd /server/
+Clone the Git Repository and install the npm dependencies by running `npm install`.
+
+	git clone https://github.com/ksiddana/tumblr-posts.git
+	cd tumblr-posts/
+	cd server/
 	npm install
-	nodemon server.js
+	node server.js
+
+Once you have the `npm modules` installed and your `node server` running open up your browser and go to [http://localhost:3000](http://localhost:3000).
 
 ## Features of the Application
 
 - Form Field for searching Tumblr Blogs
 	- billboard, nasa, arsenalfeed, peacecorps, cbs
-- Multi-select Grid for selecting the all items or one row at a time.
+	- Text field Validation check for the Blog Name
+- View the last 10 posts of the Tumblr Blog in a Responsive Grid.
+- Ability to select all the rows in the Grid.
+- Ability to select one row at a time.
 - [Tumblr API Documentation](https://www.tumblr.com/docs/en/api/v2)
