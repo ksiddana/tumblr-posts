@@ -1,5 +1,5 @@
 $app-name:  dynamic( 'Tumblr' );
-$image-search-path: '/Users/karunsiddana/Documents/Programming/Effiser/Tumblr-App/tumblr2/build/development/Tumblr/resources';
+$image-search-path: '/Users/karunsiddana/Documents/Programming/Effiser/tumblr-posts/tumblr2/build/development/Tumblr/resources';
 $theme-name:  dynamic( 'theme-triton' );
 $include-ext-abstractcomponent: dynamic(true);;
 $include-ext-abstractcontainer: dynamic(true);;
@@ -878,9 +878,7 @@ $include-ext-window-window: dynamic(true);;
 $include-tumblr-application: dynamic(true);;
 $include-tumblr-controller-blogcontroller: dynamic(true);;
 $include-tumblr-store-blogdata: dynamic(true);;
-$include-tumblr-store-personnel: dynamic(true);;
 $include-tumblr-view-blogs: dynamic(true);;
-$include-tumblr-view-main-list: dynamic(true);;
 $include-tumblr-view-main-main: dynamic(true);;
 $include-tumblr-view-main-maincontroller: dynamic(true);;
 $include-tumblr-view-main-mainmodel: dynamic(true);;

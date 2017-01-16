@@ -4,16 +4,11 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
-// const db = require('./datastore.js');
-
 const app = express();
-var tumblr = require('tumblr');
-
-// var client = tumblr.createClient({ consumer_key: 'Qka3GMiZoTMAQqO32boeOW7JsAQsTpzcjw3bPduo4JL9UC4mqB' });
+const tumblr = require('tumblr');
 
 app.set('port', process.env.PORT || 3333);
 app.use(express.static(__dirname + '/../tumblr2'));
-// app.use(express.static('public', { index: false }));
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'combined'));
 app.use(bodyParser.json());
 app.use(cors());

@@ -12,10 +12,8 @@ Ext.define('Tumblr.view.main.Main', {
     requires: [
         'Ext.plugin.Viewport',
         'Ext.window.MessageBox',
-
         'Tumblr.view.main.MainController',
         'Tumblr.view.main.MainModel',
-        'Tumblr.view.main.List'
     ],
 
     controller: 'main',
